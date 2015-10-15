@@ -1,0 +1,22 @@
+/* putting logo behind title */
+.navbar-brand>img {
+  display: inline !important;
+}
+
+/* alert box background color */
+.alert-info {
+  background-color: #D9F2FA !important;
+  border-color: #A6E9FF !important;
+  color: rgb(62, 63, 58) !important;
+}
+
+.alert a, .alert .alert-link {
+    color: rgb(62, 63, 58) !important;
+    font-weight: bold !important;
+}
+
+.alert-warning {
+  background-color: #FFDA96 !important;
+  border-color: #FFC966 !important;
+  color: rgb(62, 63, 58) !important;
+}
