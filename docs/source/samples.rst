@@ -3,7 +3,7 @@
 Samples
 =======================================
 
-You can find some sample on our github account `here <https://github.com/atooma/atooma-sdk-samples>`_.
+You can find some sample on our GitHub account `here <https://github.com/atooma/atooma-sdk-samples>`_.
 
 * `Activity Plugin <https://github.com/atooma/atooma-sdk-samples/tree/master/AtoomaActivityPlugin>`_ shows an example of how to use the "PLUGIN" value type with your own activities
 

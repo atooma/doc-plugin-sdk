@@ -15,8 +15,9 @@ This documentation is aimed to provide in depth details on how to approach devel
 
 * :ref:`intro` - Here you can find answers to questions like *what is Atooma?* and *what can I do with Plugin SDK?*. Your understanding of Atooma Plugin potential starts from here!
 * :ref:`sdk` -
-* :ref:`api` -
-* :ref:`samples` -
+* :ref:`api` - Plugin SDK API Reference.
+* :ref:`samples` - Some usage samples.
+* :ref:`resources` - Here you can find resources to use in your projects.
 * :ref:`policies` -
 * :ref:`license` -
 
@@ -31,5 +32,6 @@ Table of Contents
 	sdk
 	api
 	samples
+	resources
 	policies
 	license
