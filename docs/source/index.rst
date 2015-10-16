@@ -1,7 +1,7 @@
-Welcome to Resonance SDK's documentation!
-=========================================
+Welcome to Atooma Plugin SDK's documentation!
+===================================================
 
-Welcome to the official reference for developing with Resonance SDK powered by Atooma.
+Welcome to the official reference for developing with Plugin SDK powered by Atooma.
 
 .. note::
 
@@ -13,8 +13,10 @@ Welcome to the official reference for developing with Resonance SDK powered by A
 
 This documentation is aimed to provide in depth details on how to approach development and it is organized as follows:
 
-* :ref:`intro` - Here you can find answers to questions like *what is Resonance?* and *what can I do with Resonance SDK?*. Your understanding of Atooma potential starts from here!
-* :ref:`sdk` - Interested in Resonance? Great! This section provides advanced details on Atooma solutions for dealing with
+* :ref:`intro` - Here you can find answers to questions like *what is Atooma?* and *what can I do with Plugin SDK?*. Your understanding of Atooma Plugin potential starts from here!
+* :ref:`sdk` -
+* :ref:`api` -
+* :ref:`samples` -
 
 Table of Contents
 ------------------------------
@@ -25,3 +27,5 @@ Table of Contents
 
 	intro
 	sdk
+	api
+	samples

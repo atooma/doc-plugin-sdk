@@ -28,7 +28,9 @@ Browse the folder you created.
 
 The script will set the packagename as ``com.atooma.plugin.pluginname``; if you want to change it or if you do not want to use the script you will still need to use a packagename that begins with ``com.atooma.plugin.*``.
 
-Modules
+.. _sdk-modules:
+
+Module
 ---------------------------------------
 
 Modules are foundamental of Atooma, They rappresent tipically a specific type of feature and contains **Triggers**, **Condition Checkers** and **Performers**. To make a **Module** you have to:
@@ -39,7 +41,9 @@ Modules are foundamental of Atooma, They rappresent tipically a specific type of
 
 Each components (**Modules**, **Triggers**, **Condition Checkers** and **Performers**) that implements ``defineUI()`` can call ``setIcon()`` and ``setTitle()`` giving as parameters the int id recource of a string or drawable from its project.
 
-Triggers
+.. _sdk-trigger:
+
+Trigger
 ---------------------------------------
 
 Triggers are components that are responsible to forward a notification when a specific event occours. They are the IF part of a rule. Each trigger can specify a list of input parameters and output variables; parameters and variables must be declared in each trigger class. There are 3 types of trigger:
@@ -52,12 +56,16 @@ Triggers are components that are responsible to forward a notification when a sp
 
 When a trigger wants to notify Atooma about the rule to be triggered, it have call the ``trigger()`` method.
 
-Condition Checkers
+.. _sdk-checker:
+
+Condition Checker
 ---------------------------------------
 
 Condition Checkers are components that check if a condition is ``true`` or ``false`` in the moment they are invoked and returns a Boolean value. Condition Checkers must implement ``onInvoke()`` method and must be accompanied by an identical Trigger (same UI settings, same id, etc.) Condition Checkers are used by Atooma when a user make a rule with two or more component in the IF sections.
 
-Performers
+.. _sdk-performer:
+
+Performer
 ---------------------------------------
 
 Performers are components invoked by Atooma when a rule is triggered. Performers must implements ``onInvoke()`` method.
@@ -78,7 +86,7 @@ You need to implement two methods, ``registerComponents`` and ``defineUI``. The 
 
 .. code-block:: java
   :linenos:
-  
+
   public void registerComponents() {
     registerTrigger(new TR_Trigger(getContext(), "TRN", 1));
     registerConditionChecker(new CC_ConditionChecker(getContext(), "CC", 1));
@@ -142,7 +150,7 @@ To create a **Trigger**, just extend ``Trigger`` class from the SDK. Create the 
 
 .. code-block:: java
   :linenos:
-  
+
   public Schedule getScheduleInfo() {
     long now = System.currentTimeMillis();
     long triggerAtTime = now + 10000L;
@@ -178,7 +186,7 @@ For each component, Triggers, ConditionCheckers and Performers you can set param
 
 .. code-block:: java
   :linenos:
-  
+
   public void declareParameters() {
     addParameter(R.string.parameter_name, R.string.parameter_ifnull, "NAME", "STRING", true, null);
   }
@@ -194,7 +202,7 @@ Variables are the values that Triggers and Performers can pass in output. Trigge
 
 .. code-block:: java
   :linenos:
-  
+
   @Override
   public void declareVariables() {
     addVariable(R.string.parameter_name, "NAME", "STRING");
@@ -213,7 +221,7 @@ With ``PLUGIN`` value you can use your own ``Activity`` in order to take a ``Str
 .. code-block:: java
   :linenos:
 
-  addParameter(R.string.parameter_name, R.string.parameter_ifnull, 
+  addParameter(R.string.parameter_name, R.string.parameter_ifnull,
     "NAME", "PLUGIN", true, "com.atooma.plugin.test.MainActivity");
 
 And in the ``MainActivity`` you have to set the result:
@@ -272,7 +280,5 @@ After:
     registerTrigger(new TR_Trigger(getContext(), "TRONE", 1));
     registerTrigger(new TR_Trigger(getContext(), "TRTWO", 2));
   }
-  
+
 If I added a new parameter to the trigger ``TRONE`` I would have to increment them too.
-
-
