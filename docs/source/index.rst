@@ -17,6 +17,8 @@ This documentation is aimed to provide in depth details on how to approach devel
 * :ref:`sdk` -
 * :ref:`api` -
 * :ref:`samples` -
+* :ref:`policies` -
+* :ref:`license` -
 
 Table of Contents
 ------------------------------
@@ -29,3 +31,5 @@ Table of Contents
 	sdk
 	api
 	samples
+	policies
+	license
